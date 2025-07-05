@@ -9,6 +9,7 @@
     <script src="calculator.js"></script>
 </head>
 
+
 <body>
     <div id="heading">
         <h1>CALCULATOR</h1>
@@ -17,8 +18,84 @@
             Parentheses are also available! Go crazy with the Power of PEMDAS!!!
         </p>
     </div>
-    <div id="calculator-base">
-
+    <div class="calculator">
+        <div id="calculator-base">
+            <div id="calculator-screen">
+                <h2 id="screen-text"></h2>
+            </div>
+            <div id="buttons-container">
+                <div class="buttons-rows" id="r0">
+                    <div class="button" id="ON" value="unclicked" onclick="onClicked()">
+                        <p class="button-text" id="on">ON</p>
+                    </div>
+                    <div class="button" id="OFF" value="unclicked" onclick="offClicked()">
+                        <p class="button-text" id="off">OFF</p>
+                    </div>
+                    <div class="button" id="AC" value="unclicked" onclick="hello('AC')">
+                        <p class="button-text" id="ac">AC</p>
+                    </div>
+                    <div class="button" id="=" value="unclicked" onclick="hello('=')">
+                        <p class="button-text" id="equal">=</p>
+                    </div>
+                </div>
+                <div class="buttons-rows" id="r1">
+                    <div class="button" id="1" value="unclicked" onclick="hello('1')">
+                        <p class="button-text" id="ONE">1</p>
+                    </div>
+                    <div class="button" id="2" value="unclicked" onclick="hello('2')">
+                        <p class="button-text" id="TWO">2</p>
+                    </div>
+                    <div class="button" id="3" value="unclicked" onclick="hello('3')">
+                        <p class="button-text" id="THREE">3</p>
+                    </div>
+                    <div class="button" id="+" value="unclicked" onclick="hello('+')">
+                        <p class="button-text" id="add">+</p>
+                    </div>
+                </div>
+                <div class="buttons-rows" id="2">
+                    <div class="button" id="4">
+                        <p class="button-text" id="FOUR" value="unclicked" onclick="hello('4')">4</p>
+                    </div>
+                    <div class="button" id="5">
+                        <p class="button-text" id="FIVE" value="unclicked" onclick="hello('5')">5</p>
+                    </div>
+                    <div class="button" id="6">
+                        <p class="button-text" id="SIX" value="unclicked" onclick="hello('6')">6</p>
+                    </div>
+                    <div class="button" id="-" value="unclicked" onclick="hello('-')">
+                        <p class="button-text" id="sub">-</p>
+                    </div>
+                </div>
+                <div class="buttons-rows" id="r3">
+                    <div class="button" id="7" value="unclicked" onclick="hello('7')">
+                        <p class="button-text" id="SEVEN">7</p>
+                    </div>
+                    <div class="button" id="8" value="unclicked" onclick="hello('8')">
+                        <p class="button-text" id="EIGHT">8</p>
+                    </div>
+                    <div class="button" id="9" value="unclicked" onclick="hello('9')">
+                        <p class="button-text" id="NINE">9</p>
+                    </div>
+                    <div class="button" id="*" value="unclicked" onclick="hello('*')">
+                        <p class="button-text" id="mul">*</p>
+                    </div>
+                </div>
+                <div class="buttons-rows" id="r4">
+                    <div class="button" id="(" value="unclicked" onclick="hello('&#40')">
+                        <p class="button-text" id="lPar">(</p>
+                    </div>
+                    <div class="button" id="0" value="unclicked" onclick="hello('0')">
+                        <p class="button-text" id="ZER0">0</p>
+                    </div>
+                    <div class="button" id=")" value="unclicked" onclick="hello('&#41')">
+                        <p class="button-text" id="rPar">)</p>
+                    </div>
+                    <div class="button" id="/" value="unclicked" onclick="hello('/')">
+                        <p class="button-text" id="div">/</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
