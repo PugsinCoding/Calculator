@@ -24,7 +24,7 @@ function clickButton(buttonName){
         equation.push(buttonName);
     }
     let i = 0;
-    while(i < equation.length && i < 15){
+    while(i < equation.length && i < 10){
         screenText.innerHTML += equation[i];
         i++;
     }
@@ -84,4 +84,6 @@ function goofingAround(){
     }
     let result = eval(eqStr);
     screenText.innerHTML = result;
+    equation = [];
+    equation.push(result);
 }
